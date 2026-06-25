@@ -22,11 +22,11 @@ export function Transformation() {
             title={
               <>
                 From{" "}
-                <span className="text-gradient-brand">Hesitation</span> to{" "}
-                <span className="text-gradient-confidence">Confidence</span>
+                <span className="text-gradient-brand">Foundation</span> to{" "}
+                <span className="text-gradient-confidence">Excellence</span>
               </>
             }
-            subtitle="Six structured stages. One clear path. Each step builds on the last — so by the time you reach fluency, it feels natural."
+            subtitle="Six structured stages. One clear path. Each step builds better concepts, confidence, practical skills, and academic results."
           />
         </Reveal>
 
@@ -117,17 +117,17 @@ export function Transformation() {
             className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-br from-confidence to-confidence-dark p-5 text-center text-white shadow-confidence sm:p-6"
           >
             <h3 className="font-heading text-xl font-bold sm:text-2xl">
-              Your turn to transform.
+              Your turn to improve.
             </h3>
             <p className="mx-auto mt-1.5 max-w-xl text-small text-white/90 sm:text-body">
-              Book a free trial class today. One hour that could change how you
-              speak forever.
+              Enquire today and find the right batch for academics, coding,
+              commerce, or spoken English.
             </p>
             <a
               href="#contact"
               className="btn btn-lg mt-4 bg-white text-confidence-dark shadow-lg hover:scale-[1.02]"
             >
-              Start My Transformation
+              Start My Enquiry
             </a>
           </motion.div>
         </Reveal>

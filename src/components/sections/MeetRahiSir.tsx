@@ -16,17 +16,17 @@ import { CountUp } from "@/components/ui/count-up";
 import { BRAND } from "@/lib/site";
 
 const philosophy = [
-  "Every student can speak English — fear is the only real barrier.",
-  "Grammar matters, but confidence matters more.",
-  "Mistakes are proof you're trying, not proof you're failing.",
-  "Speaking daily beats studying occasionally. Always.",
+  "Strong basics make advanced learning easier.",
+  "Small classes help every student get noticed.",
+  "Weaker students deserve patient, dedicated attention.",
+  "Confidence grows through steady practice and guidance.",
 ];
 
 const credentials = [
-  { icon: GraduationCap, label: "8+ years teaching spoken English", color: "brand" },
-  { icon: Users, label: "1,200+ students mentored personally", color: "confidence" },
-  { icon: Award, label: "Specialist in Hindi-medium transitions", color: "brand" },
-  { icon: Target, label: "Interview & personality development expert", color: "confidence" },
+  { icon: GraduationCap, label: "CBSE, ICSE & BSEB academic coaching", color: "brand" },
+  { icon: Users, label: "Small class sizes with personal attention", color: "confidence" },
+  { icon: Award, label: "4.9-star community feedback", color: "brand" },
+  { icon: Target, label: "Java, Python, C++, DCA & spoken English", color: "confidence" },
 ];
 
 export function MeetRahiSir() {
@@ -53,16 +53,16 @@ export function MeetRahiSir() {
           <div className="mx-auto max-w-2xl text-center">
             <span className="chip bg-white/15 text-white backdrop-blur">
               <Sparkles className="h-3 w-3" />
-              Meet Your Mentor
+              Faculty & Methodology
             </span>
             <h2 className="mt-3 text-h2 font-bold">
-              The Mentor Behind Hundreds of{" "}
-              <span className="text-gradient-confidence">Confident Speakers</span>
+              Knowledgeable Educators for{" "}
+              <span className="text-gradient-confidence">Focused Learning</span>
             </h2>
             <p className="mt-3 text-subtitle text-white/85">
-              Rahi Sir didn&apos;t build an institute — he built a movement. A
-              place where hesitation dies and confidence is born, one student at
-              a time.
+              Instruction is led by well-qualified, deeply invested educators,
+              including Santosh Sir, praised by students for his teaching style
+              and dedication.
             </p>
           </div>
         </Reveal>
@@ -78,7 +78,7 @@ export function MeetRahiSir() {
               >
                 <img
                   src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&w=700&q=80"
-                  alt="Rahi Sir — Spoken English mentor in Patna"
+                  alt="Teacher guiding students at The Knowledge Hut in Patna"
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
@@ -95,12 +95,11 @@ export function MeetRahiSir() {
               >
                 <Quote className="h-5 w-5 text-confidence" />
                 <p className="mt-1 font-heading text-xs font-semibold text-foreground sm:text-sm">
-                  &ldquo;I don&apos;t teach English. I teach students to{" "}
-                  <span className="text-confidence">believe</span> they can
-                  speak it.&rdquo;
+                  &ldquo;Every student learns better when the teacher understands
+                  their pace.&rdquo;
                 </p>
                 <p className="mt-0.5 text-[10px] text-muted-foreground">
-                  — Rahi Sir
+                  - The Knowledge Hut
                 </p>
               </motion.div>
             </div>
@@ -110,28 +109,26 @@ export function MeetRahiSir() {
           <div>
             <Reveal delay={0.08}>
               <h3 className="font-heading text-xl font-bold sm:text-2xl">
-                Rahi Sir
+                Santosh Sir & Faculty Team
               </h3>
               <p className="mt-0.5 text-small text-white/85">
-                Founder &amp; Lead Mentor · Spoken English by Rahi Sir
+                Academic, IT & Spoken English Mentors · The Knowledge Hut
               </p>
             </Reveal>
 
             <Reveal delay={0.15}>
               <div className="mt-3 space-y-2 text-small text-white/90 sm:text-body">
                 <p>
-                  For over eight years, Rahi Sir has been the trusted name in
-                  Patna for spoken English transformation. What sets him apart
-                  isn&apos;t just mastery of the language — it&apos;s his rare
-                  ability to walk into a room of nervous, hesitant students and
-                  walk out with confident, fluent speakers.
+                  The Knowledge Hut is built around patient teaching, clear
+                  explanations, and real-time adjustment to each student&apos;s
+                  needs. Classes are deliberately kept focused so learners get
+                  attention instead of getting lost in the crowd.
                 </p>
                 <p>
-                  Having personally mentored over 1,200 students — many from
-                  Hindi-medium backgrounds, competitive exam aspirants and
-                  working professionals — he understands exactly where
-                  hesitation comes from and how to dismantle it, patiently and
-                  permanently.
+                  Santosh Sir is frequently praised by students for his
+                  wonderful teaching style and dedication. The team gives
+                  special attention to weaker students so confidence and
+                  academic performance improve together.
                 </p>
               </div>
             </Reveal>
@@ -183,16 +180,20 @@ export function MeetRahiSir() {
             <Reveal delay={0.36}>
               <div className="mt-4 grid grid-cols-3 gap-2">
                 {[
-                  { v: 8, s: "+", l: "Years Teaching" },
-                  { v: 1200, s: "+", l: "Students Mentored" },
-                  { v: 85, s: "%", l: "Interview Success" },
+                  { v: 4.9, s: "", l: "Community Rating" },
+                  { v: 3, s: "", l: "Boards Covered" },
+                  { v: 5, s: "+", l: "Skill Programs" },
                 ].map((stat) => (
                   <div
                     key={stat.l}
                     className="rounded-lg border border-white/15 bg-white/10 p-2 text-center backdrop-blur"
                   >
                     <p className="font-heading text-xl font-bold sm:text-2xl">
-                      <CountUp end={stat.v} suffix={stat.s} />
+                      <CountUp
+                        end={stat.v}
+                        suffix={stat.s}
+                        decimals={stat.v === 4.9 ? 1 : 0}
+                      />
                     </p>
                     <p className="mt-0.5 text-[10px] font-medium text-white/80">
                       {stat.l}
@@ -205,7 +206,7 @@ export function MeetRahiSir() {
             <Reveal delay={0.42}>
               <div className="mt-4 flex flex-col gap-2 sm:flex-row">
                 <a href="#contact" className="btn btn-primary w-full sm:w-auto">
-                  Book a Session
+                  Send Enquiry
                 </a>
                 <a
                   href={`tel:${BRAND.phoneRaw}`}

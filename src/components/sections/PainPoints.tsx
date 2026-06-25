@@ -19,10 +19,10 @@ export function PainPoints() {
               <>
                 Why Most Students{" "}
                 <span className="text-gradient-confidence">Struggle</span> to
-                Speak English
+                Improve
               </>
             }
-            subtitle="Recognise any of these? You're not alone — every student who walked into Rahi Sir's class felt the same way. Each of these has a proven solution."
+            subtitle="Recognise any of these? The Knowledge Hut solves them through structured classes, small batches, and individual attention."
           />
         </Reveal>
 
@@ -69,8 +69,8 @@ export function PainPoints() {
                     Sound familiar? You&apos;re in the right place.
                   </h3>
                   <p className="mt-1 text-small text-white/90 sm:text-body">
-                    Every transformation here began with a student who felt
-                    exactly this way. The first step is showing up.
+                    Strong results begin with the right environment, steady
+                    practice, and teachers who notice each student.
                   </p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export function PainPoints() {
                 href="#contact"
                 className="btn btn-primary w-full md:w-auto"
               >
-                Take the First Step
+                Enquire Today
               </a>
             </div>
           </div>

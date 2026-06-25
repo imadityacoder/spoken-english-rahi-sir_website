@@ -22,16 +22,16 @@ export function Footer() {
         <div className="container-x flex flex-col items-center justify-between gap-3 py-6 text-center md:flex-row md:text-left">
           <div>
             <h3 className="font-heading text-xl font-bold text-white sm:text-2xl">
-              Ready to stop hesitating?
+              Ready to start stronger?
             </h3>
             <p className="mt-0.5 text-small text-white/80">
-              Your free trial class is one tap away. Take the first step today.
+              Ask about batches for school academics, commerce, coding, DCA, or spoken English.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2">
             <a href="#contact" className="btn btn-primary btn-sm">
               <CalendarCheck className="h-4 w-4" />
-              Book Free Trial
+              Enquire Now
             </a>
             <a
               href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(BRAND.whatsappMessage)}`}
@@ -52,20 +52,20 @@ export function Footer() {
           <div>
             <a href="#home" className="flex items-center gap-2">
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-dark font-heading text-base font-bold text-white">
-                R
+                KH
               </span>
               <span className="flex flex-col leading-tight">
                 <span className="font-heading text-sm font-bold text-white">
-                  Spoken English
+                  The Knowledge Hut
                 </span>
                 <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-light">
-                  by Rahi Sir
+                  Tripolia, Patna
                 </span>
               </span>
             </a>
             <p className="mt-3 text-small text-white/70">
-              Patna&apos;s trusted spoken English academy — transforming hesitant
-              students into confident communicators, one class at a time.
+              Patna&apos;s holistic coaching institute for CBSE, ICSE, BSEB,
+              commerce, computer courses, and spoken English.
             </p>
             <div className="mt-3 flex items-center gap-2">
               <div className="flex">
@@ -172,11 +172,11 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-4 text-center text-xs text-white/60 sm:flex-row sm:text-left">
           <p>
-            © {new Date().getFullYear()} Spoken English by Rahi Sir. All rights
+            © {new Date().getFullYear()} The Knowledge Hut. All rights
             reserved.
           </p>
           <div className="flex items-center gap-3">
-            <span>From Hesitation to Confidence.</span>
+            <span>Empowering Minds, Ensuring Success.</span>
             <a
               href="#home"
               className="inline-flex items-center gap-1 text-white/70 transition-colors hover:text-confidence"

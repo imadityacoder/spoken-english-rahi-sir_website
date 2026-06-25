@@ -11,10 +11,13 @@ import { cn } from "@/lib/utils";
 const categories = [
   "All",
   "Classroom Sessions",
-  "Interactive Learning",
-  "Speaking Practice",
+  "Academic Coaching",
+  "Small Batches",
+  "Skill Development",
+  "Faculty Guidance",
+  "Doubt Clearing",
+  "IT Training",
   "Student Activities",
-  "Events",
 ];
 
 export function Gallery() {
@@ -55,7 +58,7 @@ export function Gallery() {
                 <span className="text-gradient-brand">Academy Life</span>
               </>
             }
-            subtitle="Real moments from real classes — speaking practice, group discussions, events and the energy that fills every session."
+            subtitle="Real moments from focused classrooms, academic coaching, skill development, and individual guidance."
           />
         </Reveal>
 

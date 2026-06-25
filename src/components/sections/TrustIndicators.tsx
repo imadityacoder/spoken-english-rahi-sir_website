@@ -7,6 +7,7 @@ import {
   Clock,
   Mic,
   Briefcase,
+  BookOpenCheck,
   type LucideIcon,
 } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
@@ -21,32 +22,32 @@ const indicators: {
 }[] = [
   {
     icon: Star,
-    title: "5.0 Rating",
-    text: "Rated 5.0 by hundreds of students on Google.",
+    title: "4.9 Rating",
+    text: "Highly rated by the local student community.",
     color: "confidence",
   },
   {
     icon: Heart,
-    title: "Friendly Environment",
-    text: "Mistakes are celebrated as steps forward.",
+    title: "Focused Environment",
+    text: "Structured classrooms support disciplined learning.",
     color: "brand",
   },
   {
     icon: Clock,
-    title: "Flexible Batches",
-    text: "Mon–Sat, 8 AM to 8 PM — multiple slots.",
+    title: "Evening Timings",
+    text: "Mon-Sat 3:00 PM to 8:30 PM, Sunday 3:00 PM to 7:00 PM.",
     color: "brand",
   },
   {
     icon: Mic,
-    title: "Daily Speaking",
-    text: "Every class includes live speaking drills.",
+    title: "Spoken English",
+    text: "Dedicated modules build confidence and communication.",
     color: "confidence",
   },
   {
     icon: Briefcase,
-    title: "Interview Prep",
-    text: "Real mock interviews with instant feedback.",
+    title: "Commerce & IT",
+    text: "Commerce tutoring plus Java, Python, C++, and DCA.",
     color: "brand",
   },
 ];
@@ -54,6 +55,7 @@ const indicators: {
 const statIcons: Record<string, LucideIcon> = {
   Star,
   Users: Heart,
+  BookOpenCheck,
   CalendarCheck: Clock,
   TrendingUp: Briefcase,
 };
@@ -80,7 +82,11 @@ export function TrustIndicators() {
                     <Icon className="h-4 w-4" />
                   </span>
                   <span className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-                    <CountUp end={stat.value} suffix={stat.suffix} />
+                    <CountUp
+                      end={stat.value}
+                      suffix={stat.suffix}
+                      decimals={stat.value % 1 === 0 ? 0 : 1}
+                    />
                   </span>
                   <span className="mt-0.5 text-[11px] font-medium text-muted-foreground sm:text-xs">
                     {stat.label}
@@ -136,14 +142,14 @@ export function TrustIndicators() {
                   Ready to begin?
                 </h3>
                 <p className="mt-1 text-small text-white/90">
-                  Your first trial class is on us. No fees, no commitment.
+                  Ask about the right batch for academics, commerce, IT, or spoken English.
                 </p>
               </div>
               <a
                 href="#contact"
                 className="mt-3 inline-flex items-center justify-center rounded-lg bg-white px-3 py-2 text-xs font-bold text-brand-dark transition-transform hover:scale-[1.02]"
               >
-                Book Free Trial
+                Send Enquiry
               </a>
             </div>
           </Reveal>

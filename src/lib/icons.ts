@@ -17,6 +17,13 @@ import {
   Star,
   CalendarCheck,
   TrendingUp,
+  Code2,
+  Laptop,
+  MonitorCheck,
+  GraduationCap,
+  MapPin,
+  Accessibility,
+  ClipboardCheck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -39,6 +46,13 @@ const map: Record<string, LucideIcon> = {
   Star,
   CalendarCheck,
   TrendingUp,
+  Code2,
+  Laptop,
+  MonitorCheck,
+  GraduationCap,
+  MapPin,
+  Accessibility,
+  ClipboardCheck,
 };
 
 export function getIcon(name: string): LucideIcon {

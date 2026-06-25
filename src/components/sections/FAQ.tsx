@@ -25,7 +25,7 @@ export function FAQ() {
                 <span className="text-gradient-brand">Questions</span>
               </>
             }
-            subtitle="Everything you need to know before booking your free trial class. Still unsure? Message Rahi Sir directly on WhatsApp."
+            subtitle="Everything you need to know before enquiring about academic coaching, computer courses, commerce, or spoken English."
           />
         </Reveal>
 
@@ -49,18 +49,18 @@ export function FAQ() {
                   Still have a question?
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Chat with Rahi Sir on WhatsApp — usually replies in minutes.
+                  Chat with The Knowledge Hut on WhatsApp for course and timing details.
                 </p>
               </div>
             </div>
             <a
-              href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent("Hi Rahi Sir, I have a question about the spoken English classes.")}`}
+              href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent("Hi The Knowledge Hut, I have a question about classes and admissions.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-whatsapp btn-sm w-full sm:w-auto"
             >
               <MessageCircle className="h-4 w-4" />
-              WhatsApp Sir
+              WhatsApp Us
             </a>
           </div>
         </Reveal>

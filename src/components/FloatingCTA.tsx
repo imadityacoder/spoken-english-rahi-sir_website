@@ -45,7 +45,7 @@ export function FloatingCTA() {
             </a>
             <a
               href="#contact"
-              aria-label="Book free trial class"
+              aria-label="Send admission enquiry"
               className="group flex h-11 w-11 items-center justify-center rounded-full bg-confidence text-white shadow-lg shadow-confidence/40 transition-transform hover:scale-110"
             >
               <CalendarCheck className="h-5 w-5" />
@@ -87,7 +87,7 @@ export function FloatingCTA() {
                   className="flex flex-col items-center justify-center gap-0.5 rounded-lg bg-confidence px-2 py-2 text-white shadow-confidence"
                 >
                   <CalendarCheck className="h-4 w-4" />
-                  <span className="text-[10px] font-bold">Book Trial</span>
+                  <span className="text-[10px] font-bold">Enquire</span>
                 </a>
               </div>
             </div>

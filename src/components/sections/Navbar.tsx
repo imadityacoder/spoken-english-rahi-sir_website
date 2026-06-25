@@ -37,14 +37,14 @@ export function Navbar() {
         <nav className="container-x flex h-14 items-center justify-between md:h-16">
           <a href="#home" className="flex items-center gap-2" aria-label="Home">
             <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-dark text-sm font-bold text-white shadow-brand">
-              R
+              KH
             </span>
             <span className="flex flex-col leading-tight">
               <span className="font-heading text-xs font-bold text-foreground sm:text-sm">
-                Spoken English
+                The Knowledge Hut
               </span>
               <span className="text-[9px] font-semibold uppercase tracking-wider text-brand sm:text-[10px]">
-                by Rahi Sir
+                Tripolia, Patna
               </span>
             </span>
           </a>
@@ -82,7 +82,7 @@ export function Navbar() {
             </a>
             <a href="#contact" className="btn btn-primary btn-sm ml-1">
               <CalendarCheck className="h-4 w-4" />
-              Book Free Trial
+              Enquire Now
             </a>
           </div>
 
@@ -121,12 +121,12 @@ export function Navbar() {
               <div className="flex items-center justify-between border-b border-border px-4 py-3">
                 <div className="flex items-center gap-2">
                   <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-dark font-bold text-white">
-                    R
+                    KH
                   </span>
                   <span className="font-heading text-xs font-bold">
-                    Spoken English
+                    The Knowledge Hut
                     <span className="block text-[9px] font-semibold uppercase tracking-wider text-brand">
-                      by Rahi Sir
+                      Tripolia, Patna
                     </span>
                   </span>
                 </div>
@@ -164,7 +164,7 @@ export function Navbar() {
                   className="btn btn-primary w-full"
                 >
                   <CalendarCheck className="h-4 w-4" />
-                  Book Free Trial Class
+                  Send Enquiry
                 </a>
                 <div className="grid grid-cols-2 gap-2">
                   <a

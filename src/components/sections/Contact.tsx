@@ -67,17 +67,17 @@ export function Contact() {
       <div className="container-x relative">
         <Reveal>
           <SectionHeading
-            eyebrow="Book Your Free Trial"
+            eyebrow="Admissions & Enquiries"
             tone="confidence"
             title={
               <>
-                Walk In Hesitant.{" "}
+                Visit The Knowledge Hut.{" "}
                 <span className="text-gradient-confidence">
-                  Walk Out Confident.
+                  Start Learning Better.
                 </span>
               </>
             }
-            subtitle="Book your free trial class today. Experience one real session with Rahi Sir — no fees, no commitment, just one hour that could change everything."
+            subtitle="Call, WhatsApp, or send your details to ask about academic coaching, commerce tutoring, computer courses, or spoken English batches."
           />
         </Reveal>
 
@@ -87,7 +87,7 @@ export function Contact() {
             <div className="flex h-full flex-col gap-3">
               <div className="rounded-2xl border border-border/60 bg-white p-4 shadow-soft sm:p-5">
                 <h3 className="font-heading text-base font-bold text-foreground sm:text-lg">
-                  Visit the Academy
+                  Visit the Institute
                 </h3>
                 <div className="mt-3 space-y-3">
                   <ContactRow
@@ -113,8 +113,17 @@ export function Contact() {
                   <ContactRow
                     icon={Clock}
                     title="Working Hours"
-                    lines={["Monday to Saturday", "8:00 AM – 8:00 PM"]}
+                    lines={[
+                      `${BRAND.weekdayHours}: ${BRAND.weekdayTime}`,
+                      `${BRAND.sundayHours}: ${BRAND.sundayTime}`,
+                    ]}
                     color="brand"
+                  />
+                  <ContactRow
+                    icon={MapPin}
+                    title="Landmarks"
+                    lines={BRAND.landmarks}
+                    color="confidence"
                   />
                 </div>
               </div>
@@ -122,7 +131,7 @@ export function Contact() {
               {/* Map embed — shorter */}
               <div className="overflow-hidden rounded-2xl border border-border/60 bg-white p-1.5 shadow-soft">
                 <iframe
-                  title="Spoken English by Rahi Sir location map"
+                  title="The Knowledge Hut location map"
                   src={BRAND.mapsEmbed}
                   width="100%"
                   height="180"
@@ -159,11 +168,11 @@ export function Contact() {
               <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-confidence/8" />
               <div className="relative">
                 <h3 className="font-heading text-lg font-bold text-foreground sm:text-xl">
-                  Book Free Trial Class
+                  Admission Enquiry
                 </h3>
                 <p className="mt-1 text-small text-muted-foreground">
-                  Fill your details. Our team will call within a few hours to
-                  schedule your free session.
+                  Fill your details. Our team will call back with batch,
+                  timing, and admission information.
                 </p>
 
                 <AnimatePresence mode="wait">
@@ -179,18 +188,18 @@ export function Contact() {
                         <CheckCircle2 className="h-6 w-6" />
                       </span>
                       <h4 className="mt-3 font-heading text-base font-bold text-foreground">
-                        Trial Class Booked!
+                        Enquiry Received!
                       </h4>
                       <p className="mt-1 text-small text-muted-foreground">
-                        Thank you. Our team will call you shortly to confirm
-                        your free trial slot.
+                        Thank you. Our team will call you shortly with the
+                        right course details.
                       </p>
                       <button
                         type="button"
                         onClick={() => setStatus("idle")}
                         className="mt-3 rounded-lg border border-border px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted"
                       >
-                        Book Another
+                        Send Another
                       </button>
                     </motion.div>
                   ) : (
@@ -219,7 +228,7 @@ export function Contact() {
                             name="phone"
                             required
                             pattern="[0-9+\-\s]{10,15}"
-                            placeholder="e.g. 90153 41661"
+                            placeholder="e.g. 97090 95854"
                             className="w-full rounded-lg border border-input bg-white px-3 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-brand focus:ring-2 focus:ring-brand/20"
                           />
                         </Field>
@@ -243,24 +252,21 @@ export function Contact() {
                             <option value="Not sure">Not sure yet</option>
                           </select>
                         </Field>
-                        <Field label="Current English Level">
+                        <Field label="Student Level">
                           <select
                             name="level"
                             defaultValue=""
                             className="w-full rounded-lg border border-input bg-white px-3 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-brand/20"
                           >
                             <option value="" disabled>
-                              Pick your level
+                              Pick class or level
                             </option>
-                            <option value="Beginner">
-                              Beginner (just starting)
-                            </option>
-                            <option value="Intermediate">
-                              Intermediate (some words)
-                            </option>
-                            <option value="Advanced">
-                              Advanced (can manage)
-                            </option>
+                            <option value="Class 4-8">Class 4-8</option>
+                            <option value="Class 9-10">Class 9-10</option>
+                            <option value="Class 11-12">Class 11-12</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Computer course">Computer course</option>
+                            <option value="Spoken English">Spoken English</option>
                           </select>
                         </Field>
                       </div>
@@ -269,7 +275,7 @@ export function Contact() {
                         <textarea
                           name="message"
                           rows={2}
-                          placeholder="Anything you'd like Rahi Sir to know before your trial class?"
+                          placeholder="Class, board, subject, or course you want to ask about"
                           className="w-full resize-none rounded-lg border border-input bg-white px-3 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-brand focus:ring-2 focus:ring-brand/20"
                         />
                       </Field>
@@ -295,19 +301,19 @@ export function Contact() {
                         {status === "submitting" ? (
                           <>
                             <Loader2 className="h-4 w-4 animate-spin" />
-                            Booking your trial...
+                            Sending enquiry...
                           </>
                         ) : (
                           <>
                             <CalendarCheck className="h-5 w-5" />
-                            Book Free Trial Class
+                            Send Enquiry
                             <Send className="h-4 w-4" />
                           </>
                         )}
                       </button>
                       <p className="text-center text-xs text-muted-foreground">
-                        🔒 Your details are kept private. Used only to schedule
-                        your trial class.
+                        Your details are kept private and used only for
+                        admission follow-up.
                       </p>
                     </motion.form>
                   )}

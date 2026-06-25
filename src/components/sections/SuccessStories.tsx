@@ -16,15 +16,15 @@ export function SuccessStories() {
       <div className="container-x relative">
         <Reveal>
           <SectionHeading
-            eyebrow="Real Transformations"
+            eyebrow="Student Progress"
             tone="brand"
             title={
               <>
-                From <span className="text-gradient-brand">Shy Students</span>{" "}
-                to <span className="text-gradient-confidence">Confident Speakers</span>
+                From <span className="text-gradient-brand">Learning Gaps</span>{" "}
+                to <span className="text-gradient-confidence">Better Results</span>
               </>
             }
-            subtitle="Not testimonials — proof. The hesitation you feel today can be the confidence you wear tomorrow."
+            subtitle="Progress stories across academics, commerce, coding, and spoken English - built through small batches and focused guidance."
           />
         </Reveal>
 

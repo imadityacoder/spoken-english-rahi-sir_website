@@ -17,31 +17,31 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
-const SITE_URL = "https://spokenenglishbyrahisir.in";
+const SITE_URL = "https://theknowledgehutpatna.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Spoken English by Rahi Sir | Best Spoken English Classes in Patna",
-    template: "%s | Spoken English by Rahi Sir",
+    default: "The Knowledge Hut | Coaching Institute in Tripolia, Patna",
+    template: "%s | The Knowledge Hut",
   },
   description:
-    "Join Patna's trusted spoken English academy. Master fluent English, communication skills, grammar, public speaking, and interview confidence under the guidance of Rahi Sir. Book a Free Trial Class today.",
+    "The Knowledge Hut in Tripolia, Patna offers CBSE, ICSE, and BSEB coaching for Classes 4 to 12, commerce tutoring, Java, Python, C++, DCA, and spoken English.",
   keywords: [
-    "Best Spoken English Classes in Patna",
-    "Spoken English Coaching Patna",
-    "English Speaking Course Patna",
-    "Interview Preparation Patna",
-    "Personality Development Classes Patna",
-    "Communication Skills Training Patna",
-    "Rahi Sir Spoken English",
-    "English Fluency Course Patna",
-    "Public Speaking Patna",
-    "English Grammar Classes Patna",
+    "The Knowledge Hut Patna",
+    "Coaching Institute Tripolia Patna",
+    "CBSE Coaching Patna",
+    "ICSE Coaching Patna",
+    "BSEB Coaching Patna",
+    "Class 4 to 12 Coaching Patna",
+    "Commerce Coaching Patna",
+    "Java Python C++ Training Patna",
+    "DCA Course Patna",
+    "Spoken English Tripolia Patna",
   ],
-  authors: [{ name: "Rahi Sir" }],
-  creator: "Spoken English by Rahi Sir",
-  publisher: "Spoken English by Rahi Sir",
+  authors: [{ name: "The Knowledge Hut" }],
+  creator: "The Knowledge Hut",
+  publisher: "The Knowledge Hut",
   alternates: {
     canonical: SITE_URL,
   },
@@ -49,24 +49,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
-    siteName: "Spoken English by Rahi Sir",
-    title: "Spoken English by Rahi Sir | From Hesitation to Confidence",
+    siteName: "The Knowledge Hut",
+    title: "The Knowledge Hut | Holistic Coaching in Patna",
     description:
-      "Join Patna's trusted spoken English academy. Master fluent English, communication skills, grammar, public speaking, and interview confidence with Rahi Sir.",
+      "CBSE, ICSE, BSEB coaching, commerce tutoring, coding, DCA, and spoken English at The Knowledge Hut in Tripolia, Patna.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Spoken English by Rahi Sir - Patna",
+        alt: "The Knowledge Hut - Tripolia, Patna",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spoken English by Rahi Sir | From Hesitation to Confidence",
+    title: "The Knowledge Hut | Holistic Coaching in Patna",
     description:
-      "Join Patna's trusted spoken English academy. Master fluent English and communication skills with Rahi Sir.",
+      "Academic coaching, commerce, coding, DCA, and spoken English in Tripolia, Patna.",
     images: [
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
     ],
@@ -92,20 +92,20 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "EducationalOrganization"],
   "@id": `${SITE_URL}/#organization`,
-  name: "Spoken English by Rahi Sir",
-  alternateName: "Rahi Sir Spoken English",
+  name: "The Knowledge Hut",
+  alternateName: "Knowledge Hut Tripolia",
   description:
-    "Patna's trusted spoken English academy. Master fluent English, communication skills, grammar, public speaking, and interview confidence with Rahi Sir.",
+    "The Knowledge Hut in Tripolia, Patna offers CBSE, ICSE, and BSEB coaching for Classes 4 to 12, commerce tutoring, Java, Python, C++, DCA, and spoken English.",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.svg`,
   image:
     "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-  telephone: "+919015341661",
+  telephone: "+919709095854",
   priceRange: "₹₹",
   address: {
     "@type": "PostalAddress",
     streetAddress:
-      "Patthar Ki Masjid, Opposite Milan Studio, Tripolia, Ashok Rajpath",
+      "Pathar Ki Masjid, Ashok Rajpath Road, New Khajoorbanna, Chaudhary Tola, Tripolia",
     addressLocality: "Patna",
     addressRegion: "Bihar",
     postalCode: "800006",
@@ -127,14 +127,20 @@ const jsonLd = {
         "Friday",
         "Saturday",
       ],
-      opens: "08:00",
-      closes: "20:00",
+      opens: "15:00",
+      closes: "20:30",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday"],
+      opens: "15:00",
+      closes: "19:00",
     },
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "247",
+    ratingValue: "4.9",
+    reviewCount: "120",
     bestRating: "5",
     worstRating: "1",
   },
@@ -149,7 +155,7 @@ const jsonLd = {
   },
   founder: {
     "@type": "Person",
-    name: "Rahi Sir",
+    name: "Santosh Sir",
   },
 };
 

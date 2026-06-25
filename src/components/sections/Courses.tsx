@@ -23,11 +23,11 @@ export function Courses() {
             title={
               <>
                 Programs for{" "}
-                <span className="text-gradient-confidence">Every Stage</span>{" "}
-                of Your Journey
+                <span className="text-gradient-confidence">Academics</span>{" "}
+                and Skills
               </>
             }
-            subtitle="From absolute beginner to confident communicator — pick the path that fits today, and Rahi Sir will guide you to where you want to be."
+            subtitle="From Class 4 foundations to senior academics, commerce, coding, DCA, and spoken English - choose the program that fits your goal."
           />
         </Reveal>
 
@@ -112,7 +112,7 @@ export function Courses() {
                     </ul>
 
                     <a
-                      href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(`Hi Rahi Sir, I'm interested in the "${course.title}" program. Please share more details.`)}`}
+                      href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(`Hi The Knowledge Hut, I'm interested in the "${course.title}" program. Please share more details.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={cn(
@@ -136,14 +136,14 @@ export function Courses() {
         <Reveal delay={0.15}>
           <div className="mt-6 flex flex-col items-center justify-between gap-3 rounded-xl border border-border/60 bg-white p-4 text-center shadow-soft sm:flex-row sm:p-5 sm:text-left">
             <p className="text-small text-muted-foreground sm:text-body">
-              Not sure which course fits?{" "}
+              Not sure which program fits?{" "}
               <span className="font-semibold text-foreground">
-                Get a free assessment call
+                Get a quick guidance call
               </span>{" "}
-              — we&apos;ll help you choose.
+              - we&apos;ll help you choose.
             </p>
             <a href="#contact" className="btn btn-primary btn-sm w-full sm:w-auto">
-              Get Free Assessment
+              Get Guidance
             </a>
           </div>
         </Reveal>

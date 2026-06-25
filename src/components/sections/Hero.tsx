@@ -16,10 +16,10 @@ import { BRAND } from "@/lib/site";
 import { CountUp } from "@/components/ui/count-up";
 
 const trustStrip = [
-  { icon: Star, label: "5.0 Rating" },
-  { icon: Users, label: "Interactive Classes" },
-  { icon: Clock, label: "Flexible Timings" },
-  { icon: GraduationCap, label: "Interview Prep" },
+  { icon: Star, label: "4.9 Rating" },
+  { icon: Users, label: "Small Batches" },
+  { icon: Clock, label: "Evening Classes" },
+  { icon: GraduationCap, label: "Class 4-12" },
 ];
 
 export function Hero() {
@@ -46,7 +46,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-success" />
               </span>
-              Patna&apos;s most trusted spoken English mentor
+              Patna&apos;s premier institute for holistic education
             </motion.span>
 
             <motion.h1
@@ -55,11 +55,11 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.06 }}
               className="mt-3 text-hero font-bold"
             >
-              Stop Hesitating.
+              Empowering Minds.
               <br />
-              <span className="text-gradient-hero">Start Speaking</span>
+              <span className="text-gradient-hero">Ensuring Success</span>
               <br />
-              English Confidently.
+              at The Knowledge Hut.
             </motion.h1>
 
             <motion.p
@@ -68,9 +68,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.12 }}
               className="mt-4 max-w-xl text-body-lg text-muted-foreground"
             >
-              Master communication, grammar, fluency, public speaking and
-              interview confidence under the personal guidance of{" "}
-              <span className="font-semibold text-foreground">Rahi Sir</span>.
+              Comprehensive coaching for CBSE, ICSE, and BSEB Classes 4 to 12,
+              professional computer language training, and spoken English -
+              tailored for guaranteed results.
             </motion.p>
 
             <motion.div
@@ -81,7 +81,7 @@ export function Hero() {
             >
               <a href="#contact" className="btn btn-primary btn-lg w-full sm:w-auto">
                 <CalendarCheck className="h-4 w-4" />
-                Book Free Trial Class
+                Enquire for Admission
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
@@ -126,7 +126,7 @@ export function Hero() {
             <div className="relative aspect-[5/6] overflow-hidden rounded-2xl shadow-brand ring-1 ring-border/40 sm:aspect-[4/5]">
               <img
                 src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80"
-                alt="Rahi Sir interacting with spoken English students in Patna"
+                alt="The Knowledge Hut students in a focused classroom in Patna"
                 className="h-full w-full object-cover"
                 loading="eager"
                 fetchPriority="high"
@@ -151,11 +151,11 @@ export function Hero() {
                   ))}
                 </div>
                 <span className="font-heading text-sm font-bold text-foreground">
-                  <CountUp end={5} decimals={1} duration={1.4} />
+                  <CountUp end={4.9} decimals={1} duration={1.4} />
                 </span>
               </div>
               <p className="mt-0.5 text-[10px] text-muted-foreground">
-                <CountUp end={247} suffix="+" /> Google reviews
+                Community feedback
               </p>
             </motion.div>
 
@@ -172,10 +172,10 @@ export function Hero() {
                 </span>
                 <div>
                   <p className="font-heading text-sm font-bold text-foreground">
-                    <CountUp end={1200} suffix="+" />
+                    <CountUp end={4} suffix="-12" />
                   </p>
                   <p className="text-[10px] text-muted-foreground">
-                    Students mentored
+                    Classes covered
                   </p>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export function Hero() {
             >
               <div className="flex items-center gap-1.5 text-xs font-semibold text-confidence">
                 <Sparkles className="h-3.5 w-3.5" />
-                From Hesitation to Confidence
+                Academics, Coding & English
               </div>
             </motion.div>
           </motion.div>
@@ -204,16 +204,16 @@ export function Hero() {
           className="mt-8 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 rounded-xl border border-border/50 bg-white/70 px-4 py-2.5 text-center text-small text-muted-foreground backdrop-blur md:mt-10"
         >
           <span className="inline-flex items-center gap-1.5">
-            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Hindi-medium friendly
+            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> CBSE, ICSE &amp; BSEB
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Daily speaking practice
+            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Classes 4 to 12
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Interview &amp; personality training
+            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Java, Python, C++ &amp; DCA
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Small group batches
+            <CheckCircle2 className="h-3.5 w-3.5 text-success" /> Spoken English modules
           </span>
         </motion.div>
       </div>

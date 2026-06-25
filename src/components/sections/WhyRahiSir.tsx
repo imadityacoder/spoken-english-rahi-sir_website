@@ -16,15 +16,15 @@ export function WhyRahiSir() {
       <div className="container-x relative">
         <Reveal>
           <SectionHeading
-            eyebrow="Why Learn With Rahi Sir"
+            eyebrow="Why Learn With Us"
             tone="brand"
             title={
               <>
-                Not Just Coaching —{" "}
-                <span className="text-gradient-brand">A Transformation</span>
+                Not Just Tuition -{" "}
+                <span className="text-gradient-brand">Complete Guidance</span>
               </>
             }
-            subtitle="Eight pillars that turn hesitation into fluency. Each one exists because students needed it — not because it looked good on a brochure."
+            subtitle="Eight strengths that make The Knowledge Hut a focused place for academics, skill development, and student confidence."
           />
         </Reveal>
 

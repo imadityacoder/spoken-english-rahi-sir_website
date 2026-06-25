@@ -31,11 +31,11 @@ export function Testimonials() {
             tone="confidence"
             title={
               <>
-                <span className="text-gradient-confidence">5.0 Stars</span> —
+                <span className="text-gradient-confidence">4.9 Stars</span> -
                 Here&apos;s Why Students Love It Here
               </>
             }
-            subtitle="Real reviews from real students. Watch what they say about their journey with Rahi Sir."
+            subtitle="Real feedback from students and parents about focused teaching, personal attention, and steady improvement."
           />
         </Reveal>
 
@@ -51,7 +51,7 @@ export function Testimonials() {
               ))}
             </div>
             <span className="text-xs text-muted-foreground">
-              · {BRAND.reviewCount}+ Google reviews
+              · community feedback
             </span>
           </div>
         </Reveal>
@@ -191,15 +191,15 @@ export function Testimonials() {
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {[
                 {
-                  name: "Priya's Stage Debut",
+                  name: "Academic Improvement",
                   img: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=600&q=80",
                 },
                 {
-                  name: "Aman's Interview Success",
+                  name: "Coding Progress",
                   img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80",
                 },
                 {
-                  name: "Sneha's Corporate Journey",
+                  name: "Spoken English Growth",
                   img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
                 },
               ].map((v, i) => (
